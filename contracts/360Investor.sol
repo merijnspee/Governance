@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
-import "node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import "node_modules/@openzeppelin/contracts/token/ERC20/extensions/draft-ERC20Permit.sol";
-import "node_modules/@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/extensions/draft-ERC20Permit.sol";
+import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol";
 
 contract G360Investor is ERC20, ERC20Permit, ERC20Votes {
     constructor() ERC20("G360 Investor", "360I") ERC20Permit("G360 Investor") {
